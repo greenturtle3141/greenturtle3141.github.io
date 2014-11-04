@@ -1,9 +1,9 @@
 import imager
  
 print 'Load Paintball Map...'
-picture = imager.load_image('fixedhero.png')
+picture = imager.load_image(raw_input('Type in picture name: '))
 print 'Loading Rainbow...'
-rainbow = imager.load_image('rainbow.png')
+rainbow = open('rainbow.txt', 'r')
  
 print 'Creating density array...'
 density = [0] * 439
