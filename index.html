@@ -11,7 +11,9 @@
         element.innerHTML += '<p>'+text+'</p>'
         timer.set_timeout(hi, 1000)
       
-      while(1):
+      for i in range(10000):
+        hi(element, x)
+      for i in range(100):
         hi(element, x)
 
     </script>
