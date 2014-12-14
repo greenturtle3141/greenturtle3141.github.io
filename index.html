@@ -3,6 +3,9 @@
   <head>
     <script src = "http://brython.info/src/brython_dist.js"></script>
     <script type = "text/python">
+      from browser import document
+      test = document.getElementByID('test')
+      test.innerHTML += '<p>'+x+'</p>'
       x = input('pls  giv number pl0x')
       print('hello world')
       print(x+x)
