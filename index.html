@@ -4,9 +4,14 @@
     <script src = "http://brython.info/src/brython_dist.js"></script>
     <script type = "text/python">
       from browser import document
-      x = input('pls  giv number pl0x')
+      from browser import timer 
+      x = input('pls  giv number pl0x') 
       element = document.getElementById('main_content')
-      element.innerHTML += '<p>'+x+'</p>'
+      def hi(element, text):
+        element.innerHTML += '<p>'+text+'</p>'
+        timer.set_timeout(hi, 1000)
+      
+      hi(element, x)
 
     </script>
     <meta charset='utf-8'>
