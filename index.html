@@ -7,12 +7,20 @@
       from browser import timer 
       x = input('pls  giv number pl0x') 
       element = document.getElementById('main_content')
-      def hi(element, text):
+      def output(element, text):
         element.innerHTML += '<p>'+text+'</p>'
         timer.set_timeout(hi, 3000)
       
-      for i in range(int(x)+1):
-        hi(element, str(i**2))
+      output(element, 'First'+x+'Square Numbers')
+      for i in range(int(x)):
+        i+=1
+        output(element, str(i**2))
+        
+      output(element, 'First'+x+'Cubic Numbers')
+      for i in range(int(x)):
+        i+=1
+        output(element, str(i**3))
+      
       
 
     </script>
