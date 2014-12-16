@@ -9,7 +9,7 @@
       element = document.getElementById('main_content')
       def output(element, text):
         element.innerHTML += '<p>'+text+'</p>'
-        timer.set_timeout(hi, 3000)
+        timer.set_timeout(element, 1000)
       
       output(element, 'First '+x+' Square Numbers')
       for i in range(int(x)):
@@ -52,8 +52,6 @@
         <p>Hi. I'm greenturtle3141. I'm a math nerd. Bai.</p>
       </section>
     </div>
-
-    Anything past here is greenturtle being stupid. Don't judge.
 
     
   </body>
