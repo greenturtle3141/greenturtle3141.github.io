@@ -7,12 +7,16 @@
       from browser import timer 
       
       function isPrime(x):
+        
+        prime = True
+        
         for i in range(int(x**.5)):
+          i+=1
           
           if x % i = 0:
-            return False
+            prime = False
             
-        return True
+        return prime
       
       x = input('pls  giv number pl0x') 
       element = document.getElementById('main_content')
