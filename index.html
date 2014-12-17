@@ -25,8 +25,12 @@
       x = input('pls  giv number pl0x') 
       element = document.getElementById('main_content')
       
-      if type(x) == str:
+      try:
       
+        x = int(x)
+        
+      except TypeError:
+        
         output(element, x+' is not a number, please try again.')
         exit()
         
