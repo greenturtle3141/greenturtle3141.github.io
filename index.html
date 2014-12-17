@@ -6,23 +6,32 @@
       from browser import document
       from browser import timer 
       
-      #function isPrime(x):
+      def isPrime(x):
         
-        #prime = True
+        prime = True
         
-        #for i in range(int(x**.5)):
-          #i+=1
+        for i in range(int(x**.5)):
+          i+=1
           
-          #if x % i == 0:
-            #prime = False
+          if x % i == 0:
+            prime = False
             
-        #return prime
+        return prime
       
-      x = input('pls  giv number pl0x') 
-      element = document.getElementById('main_content')
       def output(element, text):
         element.innerHTML += '<p>'+text+'</p>'
         timer.set_timeout(element, 1000)
+        
+      x = input('pls  giv number pl0x') 
+      element = document.getElementById('main_content')
+      
+      try:
+      
+        x+=0
+        
+      except TypeError:
+      
+        output(element, x+' is not a number, please try again.')
       
       output(element, 'First '+x+' Square Numbers')
       for i in range(int(x)):
