@@ -29,10 +29,12 @@
       
         x = int(x)
         
-      except TypeError:
+      except:
         
         output(element, x+' is not a number, please try again.')
         exit()
+        
+      
         
       output(element, 'First '+str(x)+' Square Numbers'
       for i in range(x):
