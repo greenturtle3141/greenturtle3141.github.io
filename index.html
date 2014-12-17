@@ -34,23 +34,23 @@
         output(element, x+' is not a number, please try again.')
         exit()
         
-      output(element, 'First '+x+' Square Numbers')
-      for i in range(int(x)):
+      output(element, 'First '+str(x)+' Square Numbers'
+      for i in range(x):
         i+=1
         output(element, str(i**2))
         
-      output(element, 'First '+x+' Cubic Numbers')
-      for i in range(int(x)):
+      output(element, 'First '+str(x)+' Cubic Numbers')
+      for i in range(x):
         i+=1
         output(element, str(i**3))
       
-      if isPrime(int(x)):
+      if isPrime(x):
         
-        output(element, x+' is a Prime Number.')
+        output(element, str(x)+' is a Prime Number.')
       
       else:
       
-        output(element, x+ ' is not Prime.')
+        output(element, str(x)+ ' is not Prime.')
 
     </script>
     <meta charset='utf-8'>
