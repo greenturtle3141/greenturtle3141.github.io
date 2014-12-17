@@ -25,17 +25,6 @@
       x = input('pls  giv number pl0x') 
       element = document.getElementById('main_content')
       
-      try:
-      
-        x = int(x)
-        
-      except TypeError:
-        
-        output(element, x+' is not a number, please try again.')
-        exit()
-        
-      
-        
       output(element, 'First '+str(x)+' Square Numbers'
       for i in range(x):
         i+=1
