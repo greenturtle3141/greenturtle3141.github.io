@@ -5,11 +5,11 @@
     <script type = "text/python">
       from browser import document
       from browser import timer 
-      
-      from browser import urllib2
-      response = urllib2.urlopen('http://python.org/')
+      import urllib.request
+      with urllib.request.urlopen('http://python.org/') as response:
       html = response.read()
       print(html)
+
       
     </script>
     <meta charset='utf-8'>
